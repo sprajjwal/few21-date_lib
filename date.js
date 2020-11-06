@@ -25,29 +25,67 @@ class D {
     }
   }
 
+  /**
+   * Returns the year of the date instance.
+   * @returns Number
+   */
+
   get year() {
     return this.date.getFullYear()
   }
+
+  /** 
+   * Returns the month index of the date instance.
+   * @returns Number
+   */
 
   get month() {
     return this.date.getMonth()
   }
 
+  /** 
+   * Returns the date of the date instance.
+   * @returns Number
+   */
+
   get day() {
     return this.date.getDate()
   }
+
+  /** 
+   * returns the hour of the date instance.
+   * @returns Number
+   */
 
   get hour() {
     return this.date.getHours()
   }
 
+
+  /** 
+   * returns the hour of the minute instance.
+   * @returns Number
+   */
+
   get min() {
     return this.date.getMinutes()
   }
 
+    /** 
+   * returns the hour of the second instance.
+   * @returns Number
+   */
+
   get secs() {
     return this.date.getSeconds()
   }
+
+    /** 
+   * returns a formatted string representation of date instance.
+   * @param String f
+   * @returns String
+   */
+
 
   format(f=false) {
     if (f === false) {
@@ -66,6 +104,12 @@ class D {
       return time
     }
   }
+
+  /** 
+   * returns a string denoting time difference between now and time from 
+   * the date insance.
+   * @returns String
+   */
 
   when() {
     const today = new Date()
@@ -99,6 +143,13 @@ class D {
 
 }
 
+
+  /** 
+   * pads a single digit number with 0 and returns it as string.
+   * @param Number num
+   * @returns String
+   */
+
 function pad(num){
   if(num < 10) {
     return `0${num}`
@@ -107,3 +158,10 @@ function pad(num){
 }
 
 
+// Create a date from a string (single parameter)
+const d = new D('9/26/1965') 
+// Create a date from some numbers (list of parameters)
+const e = new D(2018, 10, 6, 0, 0, 0)
+
+console.log(d.month)
+console.log(e.when())
