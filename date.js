@@ -1,3 +1,5 @@
+
+
 const months_f = ['January', 'February', 'March', 'April', 'May', 'June',
 'July', 'August', 'September', 'October', 'November', 'December']
 
@@ -65,6 +67,36 @@ class D {
     }
   }
 
+  when() {
+    const today = new Date()
+    let diff = today.getTime() - this.date.getTime()
+    if (diff === 0) {
+      return "today"
+    }
+    diff /= 1000
+    if (Math.abs(diff) < 60) {
+      return `${diff.toFixed(0)} second${diff.toFixed(0) > 1? 's' : ''}` + (diff < 0 ? ` from now` : ` ago`)
+    } 
+    diff /= 60
+    if (Math.abs(diff) < 60) {
+      return `${diff.toFixed(0)} minute${diff.toFixed(0) > 1? 's' : ''}` + (diff < 0 ? ` from now` : ` ago`)
+    }
+    diff /= 60
+    if (Math.abs(diff) < 24) {
+      return `${diff.toFixed(0)} hour${diff.toFixed(0) > 1? 's' : ''}` + (diff < 0 ? ` from now` : ` ago`)
+    }
+    diff /= 24
+    if (Math.abs(diff) < 30) {
+      return `${diff.toFixed(0)} day${diff.toFixed(0) > 1? 's' : ''}` + (diff < 0 ? ` from now` : ` ago`)
+    }
+    diff /= 30
+    if (Math.abs(diff) < 12) {
+      return `${diff.toFixed(0)} month${diff.toFixed(0) > 1? 's' : ''}` + (diff < 0 ? ` from now` : ` ago`)
+    }
+    diff /= 12
+    return `${diff.toFixed(0)} year${diff.toFixed(0) > 1? 's' : ''}` + (diff < 0 ? ` from now` : ` ago`)
+  }
+
 }
 
 function pad(num){
@@ -73,4 +105,5 @@ function pad(num){
   }
   return `${num}`
 }
+
 
