@@ -156,12 +156,3 @@ function pad(num){
   }
   return `${num}`
 }
-
-
-// Create a date from a string (single parameter)
-const d = new D('9/26/1965') 
-// Create a date from some numbers (list of parameters)
-const e = new D(2018, 10, 6, 0, 0, 0)
-
-console.log(d.month)
-console.log(e.when())

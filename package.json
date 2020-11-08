@@ -1,0 +1,19 @@
+{
+  "name": "@iamshaash/datelib",
+  "version": "1.0.0",
+  "description": "",
+  "main": "date.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/sprajjwal/few21-date_lib.git"
+  },
+  "author": "",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/sprajjwal/few21-date_lib/issues"
+  },
+  "homepage": "https://github.com/sprajjwal/few21-date_lib#readme"
+}
