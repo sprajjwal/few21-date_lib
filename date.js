@@ -94,7 +94,7 @@ class D {
     else {
       let time = ""
       for (let i = 0; i < f.length; i += 1) {
-        if ((/[a-zA-Z]/).test(f[i])) {
+        if (f[i] in this.chars) {
           time += this.chars[f[i]]
         }
         else {
