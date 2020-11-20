@@ -1,0 +1,54 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<coverage generated="1605832234879" clover="3.2.0">
+  <project timestamp="1605832234879" name="All files">
+    <metrics statements="45" coveredstatements="45" conditionals="43" coveredconditionals="32" methods="10" coveredmethods="10" elements="98" coveredelements="87" complexity="0" loc="45" ncloc="45" packages="1" files="1" classes="1"/>
+    <file name="date.js" path="/mnt/c/Users/spraj/Desktop/few21-date_lib/date.js">
+      <metrics statements="45" coveredstatements="45" conditionals="43" coveredconditionals="32" methods="10" coveredmethods="10"/>
+      <line num="3" count="1" type="stmt"/>
+      <line num="6" count="1" type="stmt"/>
+      <line num="11" count="9" type="stmt"/>
+      <line num="12" count="9" type="stmt"/>
+      <line num="34" count="22" type="stmt"/>
+      <line num="43" count="22" type="stmt"/>
+      <line num="52" count="22" type="stmt"/>
+      <line num="61" count="21" type="stmt"/>
+      <line num="71" count="21" type="stmt"/>
+      <line num="80" count="21" type="stmt"/>
+      <line num="91" count="7" type="cond" truecount="2" falsecount="0"/>
+      <line num="92" count="1" type="stmt"/>
+      <line num="95" count="6" type="stmt"/>
+      <line num="96" count="6" type="stmt"/>
+      <line num="97" count="36" type="cond" truecount="2" falsecount="0"/>
+      <line num="98" count="21" type="stmt"/>
+      <line num="101" count="15" type="stmt"/>
+      <line num="104" count="6" type="stmt"/>
+      <line num="115" count="8" type="stmt"/>
+      <line num="116" count="8" type="stmt"/>
+      <line num="117" count="8" type="cond" truecount="2" falsecount="0"/>
+      <line num="118" count="1" type="stmt"/>
+      <line num="120" count="7" type="stmt"/>
+      <line num="121" count="7" type="cond" truecount="2" falsecount="0"/>
+      <line num="122" count="1" type="cond" truecount="2" falsecount="2"/>
+      <line num="124" count="6" type="stmt"/>
+      <line num="125" count="6" type="cond" truecount="2" falsecount="0"/>
+      <line num="126" count="1" type="cond" truecount="2" falsecount="2"/>
+      <line num="128" count="5" type="stmt"/>
+      <line num="129" count="5" type="cond" truecount="2" falsecount="0"/>
+      <line num="130" count="1" type="cond" truecount="2" falsecount="2"/>
+      <line num="132" count="4" type="stmt"/>
+      <line num="133" count="4" type="cond" truecount="2" falsecount="0"/>
+      <line num="134" count="1" type="cond" truecount="2" falsecount="2"/>
+      <line num="136" count="3" type="stmt"/>
+      <line num="137" count="3" type="stmt"/>
+      <line num="138" count="3" type="cond" truecount="2" falsecount="0"/>
+      <line num="139" count="1" type="cond" truecount="2" falsecount="2"/>
+      <line num="141" count="2" type="stmt"/>
+      <line num="142" count="2" type="stmt"/>
+      <line num="143" count="2" type="cond" truecount="3" falsecount="1"/>
+      <line num="156" count="36" type="cond" truecount="2" falsecount="0"/>
+      <line num="157" count="14" type="stmt"/>
+      <line num="159" count="22" type="stmt"/>
+      <line num="162" count="1" type="stmt"/>
+    </file>
+  </project>
+</coverage>

@@ -4,7 +4,8 @@
   "description": "",
   "main": "date.js",
   "scripts": {
-    "test": "echo \"Error: no test specified\" && exit 1"
+    "test": "jest",
+    "coveralls": "jest --coverage --coverageReporters=text-lcov | coveralls"
   },
   "repository": {
     "type": "git",
@@ -15,5 +16,10 @@
   "bugs": {
     "url": "https://github.com/sprajjwal/few21-date_lib/issues"
   },
-  "homepage": "https://github.com/sprajjwal/few21-date_lib#readme"
+  "homepage": "https://github.com/sprajjwal/few21-date_lib#readme",
+  "dependencies": {},
+  "devDependencies": {
+    "coveralls": "^3.1.0",
+    "jest": "^26.6.3"
+  }
 }

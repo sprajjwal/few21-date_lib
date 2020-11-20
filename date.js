@@ -134,10 +134,12 @@ class D {
       return `${diff.toFixed(0)} day${diff.toFixed(0) > 1? 's' : ''}` + (diff < 0 ? ` from now` : ` ago`)
     }
     diff /= 30
+    diff -= 1
     if (Math.abs(diff) < 12) {
       return `${diff.toFixed(0)} month${diff.toFixed(0) > 1? 's' : ''}` + (diff < 0 ? ` from now` : ` ago`)
     }
     diff /= 12
+    diff -= 1
     return `${diff.toFixed(0)} year${diff.toFixed(0) > 1? 's' : ''}` + (diff < 0 ? ` from now` : ` ago`)
   }
 
@@ -156,3 +158,5 @@ function pad(num){
   }
   return `${num}`
 }
+
+module.exports = D;
