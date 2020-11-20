@@ -2,6 +2,8 @@
 ![GitHub](https://img.shields.io/github/license/sprajjwal/few21-date_lib)
 ![npm bundle size](https://img.shields.io/bundlephobia/min/@iamshaash/datelib)
 ![GitHub issues](https://img.shields.io/github/issues/sprajjwal/few21-date_lib)
+[![Build Status](https://travis-ci.com/sprajjwal/few21-date_lib.svg?branch=master)](https://travis-ci.com/sprajjwal/few21-date_lib)
+[![Coverage Status](https://coveralls.io/repos/github/sprajjwal/few21-date_lib/badge.svg?branch=master)](https://coveralls.io/github/sprajjwal/few21-date_lib?branch=master)
 
 # Date Library
 
