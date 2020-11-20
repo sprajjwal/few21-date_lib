@@ -1,14 +1,12 @@
-
-
 const months_f = ['January', 'February', 'March', 'April', 'May', 'June',
-'July', 'August', 'September', 'October', 'November', 'December']
+'July', 'August', 'September', 'October', 'November', 'December'];
 
 const months = ['Jan', 'Feb', 'Mar', 'Apr', 'May', 'Jun', 'Jul', 'Aug',
-'Sep', 'Oct', 'Nov', 'Dec']
+'Sep', 'Oct', 'Nov', 'Dec'];
 
 class D {
   constructor(...args) {
-    this.date = new Date(...args)
+    this.date = new Date(...args);
     this.chars = {
       'Y': this.year,
       'y': this.year % 100,
@@ -22,7 +20,7 @@ class D {
       'i': this.min,
       'S': pad(this.secs),
       's': this.secs
-    }
+    };
   }
 
   /**
@@ -92,13 +90,13 @@ class D {
       return `${this.year} ${months_f[this.month]} ${this.day}`
     }
     else {
-      let time = ""
+      let time = "";
       for (let i = 0; i < f.length; i += 1) {
         if (f[i] in this.chars) {
-          time += this.chars[f[i]]
+          time += this.chars[f[i]];
         }
         else {
-          time += f[i]
+          time += f[i];
         }
       }
       return time
@@ -112,34 +110,34 @@ class D {
    */
 
   when() {
-    const today = new Date()
-    let diff = today.getTime() - this.date.getTime()
+    const today = new Date();
+    let diff = today.getTime() - this.date.getTime();
     if (diff === 0) {
       return "today"
     }
-    diff /= 1000
+    diff /= 1000;
     if (Math.abs(diff) < 60) {
       return `${diff.toFixed(0)} second${diff.toFixed(0) > 1? 's' : ''}` + (diff < 0 ? ` from now` : ` ago`)
     } 
-    diff /= 60
+    diff /= 60;
     if (Math.abs(diff) < 60) {
       return `${diff.toFixed(0)} minute${diff.toFixed(0) > 1? 's' : ''}` + (diff < 0 ? ` from now` : ` ago`)
     }
-    diff /= 60
+    diff /= 60;
     if (Math.abs(diff) < 24) {
       return `${diff.toFixed(0)} hour${diff.toFixed(0) > 1? 's' : ''}` + (diff < 0 ? ` from now` : ` ago`)
     }
-    diff /= 24
+    diff /= 24;
     if (Math.abs(diff) < 30) {
       return `${diff.toFixed(0)} day${diff.toFixed(0) > 1? 's' : ''}` + (diff < 0 ? ` from now` : ` ago`)
     }
-    diff /= 30
-    diff -= 1
+    diff /= 30;
+    diff -= 1;
     if (Math.abs(diff) < 12) {
       return `${diff.toFixed(0)} month${diff.toFixed(0) > 1? 's' : ''}` + (diff < 0 ? ` from now` : ` ago`)
     }
-    diff /= 12
-    diff -= 1
+    diff /= 12;
+    diff -= 1;
     return `${diff.toFixed(0)} year${diff.toFixed(0) > 1? 's' : ''}` + (diff < 0 ? ` from now` : ` ago`)
   }
 
@@ -159,4 +157,4 @@ function pad(num){
   return `${num}`
 }
 
-export default D
+export default D;

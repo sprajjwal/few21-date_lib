@@ -1,4 +1,4 @@
-const D = require('./date')
+const D = require('./umd/date')
 
 const date1 = new D(2017, 0, 2, 3, 4, 5)
 const date2 = new D(2019, 0, 2, 3, 4, 5)
